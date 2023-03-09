@@ -22,6 +22,8 @@ class IndexController extends AbstractController
     public function index()
     {
         $pamrs  = $this->request->all();
+
+
         $userId = $this->request->input('user_id', 5);
         $user   = $this->request->input('user', 'Hyperf');
         $method = $this->request->getMethod();
